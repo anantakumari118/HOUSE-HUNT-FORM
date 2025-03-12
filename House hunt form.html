@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House hunt form</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%; /* Makes it full width */
+            display: block; /* Ensures it starts on a new line */
+            margin-top: 10px; /* Adds space between label and textarea */
+            padding: 5px;
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Buy/Rent your dream house</h1>
+
+        <label for="fname"> Enter your name: </label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <br><br>
+
+        <label for="bhk">Select BHK Type:</label><br><br>
+        <select id="bhk" name="bhk">
+            <option value="" disabled selected>Choose BHK Type</option>
+            <option value="1BHK">1 BHK</option>
+            <option value="2BHK">2 BHK</option>
+            <option value="3BHK">3 BHK</option>
+            <option value="4BHK">4 BHK</option>
+            <option value="5BHK">5+ BHK</option>
+        </select>
+        <br><br>
+
+        <label for="buyorrent"> You want to buy or rent the house? </label><br><br>
+        <select id="buyorrent" name="buyorrent">
+            <option value="" disabled selected>Choose</option>
+            <option value="Buy">Buy</option>
+            <option value="Rent">Rent</option>
+        </select>
+        <br><br>
+
+        <label for="typeofflat"> What type of flat you need?</label><br><br>
+        <select name="typeofflat" id="typeofflat">
+            <option value="" disabled selected>Choose</option>
+            <option value="Independent">Independent</option>
+            <option value="Dependent">Dependent</option>
+        </select>
+        <br><br>
+
+        <label for="specification"> Anything other you need rather than all these. Please mention below</label>
+        <textarea name="specification" id="specification" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <label for="email">Enter your email for further updates</label>
+        <input type="email" name="email" id="email">
+
+        <br><br>
+
+        <input type="submit" value="submit">
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
